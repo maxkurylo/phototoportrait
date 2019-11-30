@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photo to Portrait</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/common.css">
+</head>
+
+
+<body>
+
+    <section id="original-image-load" class="file-load original-image-load animated fadeIn">
+
+        <input id="image-select" type="file" />
+
+        <div id="image-select-info" class="file-load-info image-select-info">
+            <span>+</span>
+            <p>select image</p>
+        </div>
+
+    </section>
+
+    <section id="image-display" class="image-display hidden animated">
+        <div class="image-wrapper">
+            <img id="image" src="" alt="">
+        </div>
+    </section>
+
+    <section id="loading" class="loading hidden">
+        <img src="loading.gif" alt="">
+    </section>
+
+    <section id="style-select" class="style-select animated hidden">
+        <ul id="styles-list" class="styles-list">
+            <li>
+                <div class="file-load style-image-load">
+
+                    <input id="style-load" type="file" />
+
+                    <div class="file-load-info style-load-info">
+                        <span>+</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section class="errors">
+        <ul id="errors-list">
+        </ul>
+    </section>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

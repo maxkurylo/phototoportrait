@@ -1,6 +1,6 @@
 ## Photo to Portrait
 
-This app is used to stylize one image like another
+Developed with [Neural style transfer](https://www.tensorflow.org/tutorials/generative/style_transfer) and [Electron](https://electronjs.org/)
 
 ![](demo.gif)
 
